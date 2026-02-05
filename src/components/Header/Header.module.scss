@@ -3,8 +3,46 @@
 
 .header {
     border: 2px solid red;
-    width: 100%;
+    width: 100vw;
     min-height: 10vh;
+    align-content: center;
+    padding: 5px;
     position: absolute;
     top: 0;
+
+    .container {
+        border: 2px solid black;
+        max-width: 96%;
+        margin: 0 auto;
+        padding: 5px;
+        @include flex-between;
+
+        .logo {
+            border: 2px solid yellow;
+            width: fit-content;
+        }
+
+        .nav {
+            border: 2px solid green;
+            width: fit-content;
+            @include flex-between;
+            padding: 3px;
+            gap: 2rem;
+
+            p {
+                border: 2px solid yellow;
+                margin-bottom: 0;
+            }
+
+            div {
+                border: 2px solid yellow;
+            }
+
+            @include mobile {
+                .desktopNav {
+                    display: none;
+                }
+            }
+        }
+    }
 }
