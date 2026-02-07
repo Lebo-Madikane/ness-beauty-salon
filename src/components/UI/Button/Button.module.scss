@@ -1,0 +1,16 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.button {
+    padding: 3.5px 8.5px;
+    font-size: 0.9rem;
+    color: #FFF7F4;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}

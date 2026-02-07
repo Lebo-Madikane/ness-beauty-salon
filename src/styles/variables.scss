@@ -6,19 +6,26 @@
 
 // Colors
 :root {
-    --primary-color: #2c5530;
-    --secondary-color: #f5f5f5;
-    --accent-color: #d4a574;
-    --text-dark: #333333;
-    --text-light: #666666;
-    --white: #ffffff;
-    --success: #28a745;
-    --error: #dc3545;
+    /* Brand Colours */
+    --color-primary: #C07A8C;
+    --color-secondary: #3B1F2B;
+    
+    /* Backgrounds */
+    --color-background: #FFF7F4;
+    --color-surface: #FFFFFF;
+    
+    /* Text */
+    --color-text-primary: #2B2B2B;
+    --color-text-secondary: #6B6B6B;
+    
+    /* UI */
+    --color-border: #E6D8D3;
+    --color-accent: #E8B4BC;
 }
 
 // Typography
-$font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-$font-secondary: 'Playfair Display', serif;
+$font-primary: 'rasa', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-secondary: 'viga', 'Playfair Display', serif;
 
 // Breakpoints
 $mobile: 768px !default;
