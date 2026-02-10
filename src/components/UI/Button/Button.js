@@ -1,11 +1,28 @@
+import Link from 'next/link';
 import styles from './Button.module.scss';
 
-export default function Button() {
+export default function Button({
+    children,
+    variant = 'primary',
+    size = 'md',
+    href,
+    type = 'button',
+    onClick,
 
+}) {
+
+    const classNames = ` ${styles.button} ${styles[variant]} ${styles[size]}`;
+
+    if (href) {
+        return (
+            <Link href={href} className={classNames}>{children}</Link>
+        )
+    };
+    
     return (
-        <>
-            <div className={styles.button}>Book Now</div>
-        </>
-    )
+        <button type={type} onClick={onClick} className={classNames}>
+            {children}
+        </button>
+    );
 
 }
