@@ -3,24 +3,26 @@
 
 .header {
     border: 2px solid red;
-    background-color: --color-background;
-    width: 100vw;
+    background-color: var(--color-background);
+    width: 100%;
     min-height: 10vh;
-    align-content: center;
-    padding: 5px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    align-content: center;
 
     .container {
         max-width: 96%;
-        margin: 0 auto;
         padding: 5px;
         @include flex-between;
+        margin: 0 auto;
 
         .logo {
-            width: fit-content;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            text-decoration: none;
         }
 
         .nav {
@@ -28,10 +30,8 @@
             @include flex-between;
             padding: 3px;
             gap: 1.5rem;
-
-            p {
-                margin-bottom: 0;
-            }
+            font-size: 1.1rem;
+            text-decoration: none;
 
             @include mobile {
                 gap: 0.3rem;

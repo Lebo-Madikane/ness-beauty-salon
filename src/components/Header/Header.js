@@ -9,19 +9,11 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <Link href='#/'>
-                    <h2 className={styles.logo}>NBS</h2>
-                </Link>
+                <Link href='/' className={styles.logo}>NBS</Link>
                 <div className={styles.nav}>
-                    <Link href='#/'>
-                        <p>Home</p>
-                    </Link>
-                    <Link href='#/'>
-                        <p className={styles.desktopNav}>Services</p>
-                    </Link>
-                    <Link href='#/'>
-                        <p className={styles.desktopNav}>Contact</p>
-                    </Link>
+                    <Link href='/'>Home</Link>
+                    <Link href='/services' className={styles.desktopNav}>Services</Link>
+                    <Link href='/contact' className={styles.desktopNav}>Contact</Link>
                     <Button>Book Now</Button>
                 </div>
             </div>
