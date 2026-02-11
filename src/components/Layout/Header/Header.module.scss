@@ -1,15 +1,12 @@
-@use '../../styles/variables' as *;
-@use '../../styles/mixins' as *;
+@use '../../../styles/variables.scss' as *;
+@use '../../../styles/mixins.scss' as *;
 
 .header {
     border: 2px solid red;
     background-color: var(--color-background);
     width: 100%;
-    min-height: 72px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 72px;
+    position: static;
     align-content: center;
 
     .container {

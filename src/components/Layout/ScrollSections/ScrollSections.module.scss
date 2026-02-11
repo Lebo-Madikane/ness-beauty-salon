@@ -1,0 +1,21 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
+
+.scrollSections {
+    border: 2px solid yellow;
+    width: 100%;
+    height: calc(100vh - 232px);
+    padding: 5px;
+    align-content: center;
+
+    .container {
+        max-width: 96%;
+        margin: 0 auto;
+        padding: 5px;
+
+        .content {
+            width: 100%;
+        }
+
+    }
+}

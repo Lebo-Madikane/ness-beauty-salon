@@ -1,5 +1,5 @@
 import styles from './Header.module.scss'
-import Button from '../UI/Button/Button'
+import Button from '../../UI/Button/Button'
 import Link from 'next/link';
 
 
