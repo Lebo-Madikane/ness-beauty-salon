@@ -1,21 +1,16 @@
-@use '../../../styles/variables' as *;
-@use '../../../styles/mixins' as *;
 
-.scrollSections {
+.scroll {
     border: 2px solid yellow;
     width: 100%;
     height: calc(100vh - 232px);
     padding: 5px;
-    align-content: center;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 
-    .container {
-        max-width: 96%;
-        margin: 0 auto;
-        padding: 5px;
-
-        .content {
-            width: 100%;
-        }
-
+    .panel {
+        height: 100%;
+        scroll-snap-align: start;
+        align-content: center;
     }
+
 }

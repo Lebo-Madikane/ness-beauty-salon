@@ -4,19 +4,15 @@ import Services from '@/components/Sections/Services/Services';
 import Form from '@/components/Sections/Form/Form';
 import Testimonial from '@/components/Sections/Testimonial/Testimonial';
 
-export default function Cta() {
+export default function ScrollSections() {
 
     return (
-        <section className={styles.scrollSections}>
-            <div className={styles.container}>
-                <div className={styles.content}>
-                    <Hero />
-                    <Services />
-                    <Form />
-                    <Testimonial />
-                </div>
-            </div>
-        </section>
+        <main className={styles.scroll}>
+            <section className={styles.panel}><Hero /></section>
+            <section className={styles.panel}><Services /></section>
+            <section className={styles.panel}><Form /></section>
+            <section className={styles.panel}><Testimonial /></section>
+        </main>
     )
 
 }
