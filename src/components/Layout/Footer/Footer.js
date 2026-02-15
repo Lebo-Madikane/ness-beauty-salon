@@ -1,5 +1,6 @@
 import styles from './Footer.module.scss';
-import {FaWhatsapp, FaInstagram, FaTiktok, FaFacebookF} from 'react-icons/fa'
+import { FaWhatsapp, FaInstagram, FaTiktok, FaFacebookF } from 'react-icons/fa'
+import Button from '@/components/UI/Button/Button';
 
 export default function Footer() {
 
@@ -12,6 +13,12 @@ export default function Footer() {
             rel: 'noopener noreferrer'
         },
         {
+            name: 'TikTok',
+            icon: FaTiktok,
+            url: 'https://tiktok.com/@nessbeautysalon',
+            ariaLabel: 'TikTok'
+        },
+        {
             name: 'Instagram',
             icon: FaInstagram,
             url: 'https://instagram.com/nessbeautysalon',
@@ -19,16 +26,10 @@ export default function Footer() {
             rel: 'noopener noreferrer'
         },
         {
-            name: 'TikTok',
-            icon: FaTiktok,
-            url: 'https://tiktok.com/@nessbeautysalon', 
-            ariaLabel: 'Follow us on TikTok'
-        },
-        {
             name: 'Facebook',
             icon: FaFacebookF,
             url: 'https://facebook.com/nessbeautysalon', 
-            ariaLabel: 'Follow us on Facebook'
+            ariaLabel: 'Facebook'
         }
     ];
 
@@ -42,15 +43,23 @@ export default function Footer() {
                             return (
                                 <a
                                     key={social.name}
-
+                                    href={social.url}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    aria-label={social.ariaLabel}
+                                    className={styles.socialLink}
                                 >
-                                    <Icon size={20} />
+                                    <Icon size={16} />
                                 </a>
-                            )
+                            );
                         })}
                     </div>
-                    <div className={styles.msg}></div>
-                    <div className={styles.cta}></div>
+                    <div className={styles.msg}>
+                        <span className={styles.line}></span>Wear Your Crown<span className={styles.line}></span>
+                    </div>
+                    <div className={styles.cta}>
+                        <Button>Gallery</Button>
+                    </div>
                 </div>
             </div>
         </section>
