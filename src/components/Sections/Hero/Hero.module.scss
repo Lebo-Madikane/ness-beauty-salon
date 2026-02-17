@@ -16,6 +16,12 @@
             width: 100%;
             text-align: center;
             border: 2px solid red;
+            //position: absolute;
+
+            .structure {
+                display: inline-block;
+                border: 2px solid black;
+            }
         }
 
     }
