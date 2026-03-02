@@ -16,6 +16,33 @@
             width: 100%;
             text-align: center;
             border: 2px solid red;
+
+            .testimony {
+
+                span {
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: black;
+                    border-radius: 50%;
+                }
+            }
+
+            .location {
+                width: 34%;
+                height: 120px;
+                margin: 0 auto;
+                border-radius: 5px 5px;
+                align-content: center;
+                border: 2px solid red;
+            }
+
+            .contact {
+                p {
+                    margin-top: 15;
+                    line-height: 1.1;
+                }
+            }
         }
 
     }
