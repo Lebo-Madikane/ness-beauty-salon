@@ -3,7 +3,7 @@
 
 .testimonial {
     border: 2px solid blue;
-    width: 100%;
+    max-width: fit-content;
     align-content: center;
     margin: 0px auto;
 
@@ -18,6 +18,8 @@
             border: 2px solid red;
 
             .testimony {
+                width: 80%;
+                margin: 0 auto;
 
                 span {
                     display: inline-block;
@@ -29,7 +31,7 @@
             }
 
             .location {
-                width: 34%;
+                width: 80%;
                 height: 120px;
                 margin: 0 auto;
                 border-radius: 5px 5px;
@@ -41,17 +43,6 @@
                 p {
                     margin-top: 15;
                     line-height: 1.1;
-                }
-            }
-
-            @include mobile {
-                .testimony {
-                    width: 80%;
-                    margin: 0 auto;
-                }
-
-                .location {
-                    width: 80%;
                 }
             }
         }
