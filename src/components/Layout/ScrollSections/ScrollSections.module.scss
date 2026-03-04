@@ -1,3 +1,5 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixins' as *;
 
 .scroll {
     border: 2px solid yellow;
@@ -6,11 +8,75 @@
     padding: 5px;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    z-index: 1;
+
+    .aboutOne {
+        width: 22%;
+        min-height: fit-content;
+        padding: 3px;
+        border: 10px dotted black;
+        position: absolute;
+        top: 44%;
+        left: 3%;
+
+        p{
+            margin-bottom: 0;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
 
     .panel {
+        margin: 0 auto;
+        border: 2px dotted green;
+        max-width: fit-content;
         height: 100%;
         scroll-snap-align: start;
         align-content: center;
+    }
+
+    .aboutTwo {
+        width: 22%;
+        height: 16%;
+        padding: 3px;
+        border: 10px dotted black;
+        position: absolute;
+        top: 44%;
+        right: 3%;
+
+        p{
+            text-align: end;
+            margin-bottom: 0;
+        }
+
+        .circleContainer {
+            display: flex;
+            justify-content: flex-end;
+            height:  55%;
+            gap: 5;
+            border: 2px solid red;
+
+            .circle {
+                    width: 21%;
+                    border: 2px solid black;
+                    background-color: bisque;
+                    border-radius: 50%;
+                }
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
     }
 
 }
