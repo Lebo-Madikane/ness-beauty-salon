@@ -42,7 +42,12 @@
 
                 .beauty {
                     z-index: 20;
-                    //letter-spacing: 0.2em;
+                    letter-spacing: 0.2em;
+
+                    @include mobile {
+                        letter-spacing: 0.07em;
+                        border: 3px solid black;
+                    }
                 }
 
                 @include mobile {

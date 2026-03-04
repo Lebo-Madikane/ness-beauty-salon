@@ -6,7 +6,7 @@ export default function Hero() {
         <section className={styles.hero}>
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <h1 className={`${styles.heading}`}><span className={styles.ness}>NESS</span> <span className={styles.beauty}>BE A U TY</span> <span className={styles.salon}>SALON</span></h1>
+                    <h1 className={`${styles.heading}`}><span className={styles.ness}>NESS</span> <span className={styles.beauty}>BEAUTY</span> <span className={styles.salon}>SALON</span></h1>
                     <Image className={`${styles.structure} ${styles.main}`} src='/images/hero-images/hero-main.webp' alt="Hero Image" width={150} height={100} priority={true} />
                     <Image className={`${styles.structure} ${styles.cropped}`} src='/images/hero-images/hair-cropped.webp' alt="Hero Image" width={150} height={100} priority={true} />
                     <Image className={`${styles.structure} ${styles.full}`} src='/images/hero-images/hair-full.webp' alt="Hero Image" width={150} height={100} priority={true} />

@@ -34,13 +34,24 @@
                 margin: 0 auto;
                 border-radius: 5px 5px;
                 align-content: center;
-                border: 2px solid red;
+                border: 2px solid black;
             }
 
             .contact {
                 p {
                     margin-top: 15;
                     line-height: 1.1;
+                }
+            }
+
+            @include mobile {
+                .testimony {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+                .location {
+                    width: 80%;
                 }
             }
         }

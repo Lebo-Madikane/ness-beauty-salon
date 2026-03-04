@@ -33,15 +33,21 @@
                     
 
                     .field {
-                        //border: 2px solid red;
+                        width: 100%;
+                        border: 2px solid blue;
 
                         input {
+                            width: 40%;
+                            border: 2px solid red;
                             padding: 0.3rem;
                             margin: 0.5rem;
                         }
 
                         label {
-                            margin-right: 5;
+                            width: 40%;
+                            border: 2px solid red;
+                            padding: 0.3rem;
+                            margin: 0.5rem;
                         }
                     }
 

@@ -16,9 +16,8 @@ export default function Form() {
                                 <input placeholder='Last Name' />
                             </div>
                             <div className={styles.field}>
-                                <input placeholder='+2784 391 7945' />
-                                <label>Select Service</label>
-                                <select></select>
+                                <input placeholder='+2784 391 7..' />
+                                <label>Select Style <select></select></label>
                             </div>
                             <div className={styles.field}>
                                 <input type='date'/>
