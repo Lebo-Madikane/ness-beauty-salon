@@ -2,7 +2,7 @@ import styles from './Testimonial.module.scss'
 
 export default function Testimonial() {
     return (
-        <section className={styles.testimonial}>
+        <section id='contact' className={styles.testimonial}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.testimony}>

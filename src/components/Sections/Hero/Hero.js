@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Hero() {
     return (
-        <section className={styles.hero}>
+        <section id="hero" className={styles.hero}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h1 className={`${styles.heading}`}><span className={styles.ness}>NESS</span> <span className={styles.beauty}>BEAUTY</span> <span className={styles.salon}>SALON</span></h1>

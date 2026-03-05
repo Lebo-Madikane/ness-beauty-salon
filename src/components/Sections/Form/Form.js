@@ -4,7 +4,7 @@ import Button from '@/components/UI/Button/Button'
 
 export default function Form() {
     return (
-        <section className={styles.formSection}>
+        <section id='form' className={styles.formSection}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <Card className={styles.formCard}>
