@@ -5,12 +5,16 @@ import { Rasa, Viga } from 'next/font/google';
 const rasa = Rasa({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-rasa',
+  display: 'swap',
 })
 
 // Configure Viga (secondary font)
 const viga = Viga({
   subsets: ['latin'],
   weight: '400',
+  variable: '--font-viga',
+  display: 'swap',
 })
 
 export const metadata = {
@@ -20,7 +24,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${rasa} ${viga}`}>
+    <html lang="en" className={`${rasa.variable} ${viga.variable}`}>
       <head>
       </head>
       <body>
