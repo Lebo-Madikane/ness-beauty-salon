@@ -6,8 +6,8 @@ export default function Testimonial() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.testimony}>
-                        <h2><i>"</i></h2>
-                        <p>The atmosphere at Ness Beauty Salon is as refined as the style.<br/>
+                        <div className={styles.qoute}>"</div>
+                        <p>The atmosphere at Ness Beauty Salon is as refined as the style.
                             I’ve never felt so understood by a stylist.  Truly an artistic experience.</p>
                         <span></span>
                         <h6>ELENA VANCE</h6>
