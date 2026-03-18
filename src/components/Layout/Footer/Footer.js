@@ -1,6 +1,7 @@
 import styles from './Footer.module.scss';
 import { FaWhatsapp, FaInstagram, FaTiktok, FaFacebookF } from 'react-icons/fa'
 import Button from '@/components/UI/Button/Button';
+import Link from 'next/link';
 
 export default function Footer() {
 
@@ -58,7 +59,9 @@ export default function Footer() {
                         <span className={styles.line}></span>Wear Your Crown<span className={styles.line}></span>
                     </div>
                     <div className={styles.cta}>
-                        <Button>Gallery</Button>
+                        <Link href="/gallery">
+                            <Button>Gallery</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,40 @@
+@use '../../styles/mixins.scss' as *;
+
+
+.container {
+    border: 2px solid yellow;
+    width: 100%;
+    height: calc(100vh - 232px);
+    overflow-y: none;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .gallery {
+        width: 40%;
+        height: 70%;
+        border: 2px solid red;
+        margin: 0 auto;
+        padding: 3px;
+
+        @include mobile {
+            width: 98%;
+        }
+
+        .row {
+            height: 50%;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: space-around;
+            padding: 3px;
+        }
+
+        .galleryOne, .galleryTwo, .galleryThree, .galleryFour {
+            width: 159px;
+            border-radius: 49%;
+            padding: 5px;
+            border: 2px solid green;
+        }
+    }
+}
