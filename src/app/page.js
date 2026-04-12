@@ -5,7 +5,6 @@ import ScrollSections from "@/components/Layout/ScrollSections/ScrollSections"
 import Footer from "@/components/Layout/Footer/Footer"
 
 
-
 export default function HomePage() {
     return (
         <div className={styles.homepage}>
