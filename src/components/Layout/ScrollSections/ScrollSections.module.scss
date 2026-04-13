@@ -14,13 +14,17 @@
         width: 22%;
         min-height: fit-content;
         padding: 3px;
-        border: 10px dotted black;
         position: absolute;
         top: 44%;
         left: 3%;
 
+        h4 {
+            color: var(--color-tertiary);
+        }
+
         p{
             margin-bottom: 0;
+            color: var(--color-text-primary);
         }
 
         @include mobile {
@@ -44,12 +48,12 @@
         width: 22%;
         height: 16%;
         padding: 3px;
-        border: 10px dotted black;
         position: absolute;
         top: 44%;
         right: 3%;
 
-        p{
+        h4{
+            color: var(--color-tertiary);
             text-align: end;
             margin-bottom: 0;
         }
@@ -57,15 +61,18 @@
         .circleContainer {
             display: flex;
             justify-content: flex-end;
-            height:  55%;
+            height:  50%;
             gap: 5;
-            border: 2px solid red;
 
             .circle {
                     width: 20%;
-                    border: 2px solid black;
-                    background-color: bisque;
+                    border: 2px solid var(--color-tertiary);
+                    background-color: var(--color-text-primary);
                     border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--color-secondary);
                 }
         }
 

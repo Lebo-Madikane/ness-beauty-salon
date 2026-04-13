@@ -16,8 +16,12 @@
         .logo {
             font-size: 2.5rem;
             font-weight: 600;
-            color: var(--color-primary);
+            color: var(--color-text-primary);
             text-decoration: none;
+
+            &:hover {
+                color: var(--color-tertiary);
+            }
         }
 
         .nav {
@@ -32,6 +36,12 @@
                 gap: 0.3rem;
                 .desktopNav {
                     display: none;
+                }
+            }
+
+            .list{
+                &:hover {
+                    color: var(--color-secondary);
                 }
             }
         }

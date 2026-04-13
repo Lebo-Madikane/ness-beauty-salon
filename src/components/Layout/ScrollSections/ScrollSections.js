@@ -17,11 +17,11 @@ export default function ScrollSections() {
             <section className={styles.panel}><Form /></section>
             <section className={styles.panel}><Testimonial /></section>
             <div className={styles.aboutTwo}>
-                <p>Boys Cut: Special</p>
+                <h4>Boys Cut</h4>
                 <div className={styles.circleContainer}>
-                    <div className={styles.circle}></div>
-                    <div className={styles.circle}></div>
-                    <div className={styles.circle}></div>
+                    <div className={styles.circle}>Clean</div>
+                    <div className={styles.circle}>Fresh</div>
+                    <div className={styles.circle}>Sharp</div>
                 </div>
             </div>
         </main>

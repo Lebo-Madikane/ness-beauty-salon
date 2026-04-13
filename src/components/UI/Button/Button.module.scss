@@ -33,16 +33,18 @@
     color: #ffffff;
 
     &:hover {
+        color: #ffffff;
         background-color: var(--color-secondary);
     }
 }
 
 .secondary {
-    background-color: var(--color-secondary);
-    color: #ffffff;
+    background-color: var(--color-surface);
+    color: var(--color-secondary);
 
     &:hover {
-        background-color: var(--color-primary);
+        background-color: var(--color-secondary);
+        color: var(--color-surface);
     }
 }
 
