@@ -37,10 +37,12 @@
                 justify-content: space-between;
                 
                 .ness, .salon {
+                    display: none;
                     z-index: 50;
                 }
 
                 .beauty {
+                    display: none;
                     z-index: 20;
                     letter-spacing: 0.2em;
 
@@ -57,21 +59,9 @@
             }
 
             .main {
-                width: 220px;
+                width: 400px;
                 object-fit: cover;
                 z-index: 40;
-            }
-
-            .cropped {
-                z-index: 30;
-                width: 320px;
-                margin-bottom: 2%;
-            }
-
-            .full {
-                z-index: 10;
-                width: 320px;
-                margin-bottom: 10%;
             }
         }
 
