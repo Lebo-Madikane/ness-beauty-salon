@@ -2,7 +2,7 @@
 @use '../../../styles/mixins' as *;
 
 .scroll {
-    border: 2px solid yellow;
+    //border: 2px solid yellow;
     width: 100%;
     height: calc(100vh - 232px);
     padding: 5px;
@@ -55,13 +55,13 @@
         h4{
             color: var(--color-tertiary);
             text-align: end;
-            margin-bottom: 0;
+            margin-bottom: 5;
         }
 
         .circleContainer {
             display: flex;
             justify-content: flex-end;
-            height:  50%;
+            height:  48%;
             gap: 5;
 
             .circle {
