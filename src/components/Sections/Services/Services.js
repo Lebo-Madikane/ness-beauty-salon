@@ -1,32 +1,35 @@
+import Button from '@/components/UI/Button/Button'
 import styles from './Services.module.scss'
 import Card from '@/components/UI/Card/Card'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Services() {
 
     const services = [
         {
             id: 1,
-            style: "Buys Cut",
-            price: "R600",
-            image: "/images/",
+            style: "Braids",
+            price: "R900",
+            image: '/images/services-images/Braides.webp',
         },
         {
             id: 2,
             style: "Buys Cut",
             price: "R600",
-            image: "/images/",
+            image: '/images/services-images/Braides.webp',
         },
         {
             id: 3,
-            style: "Buys Cut",
-            price: "R600",
-            image: "/images/",
+            style: "Wash",
+            price: "R300",
+            image: '/images/services-images/Braides.webp',
         },
         {
             id: 4,
-            style: "Buys Cut",
-            price: "R600",
-            image: "/images/",
+            style: "Installation",
+            price: "R1500",
+            image: '/images/services-images/Braides.webp',
         }
     ]
 
@@ -38,11 +41,11 @@ export default function Services() {
                         <div key={service.id}>
                             <Card className={styles.serviceCard}>
                                 <div className={styles.serviceCardContent}>
-                                    <h6 className={styles.image}>IMAGE</h6>
-                                    <h4 className={styles.style}>STYLE</h4>
+                                    <Image className={styles.image} src={service.image} alt="Hero Image" width={150} height={100} priority={true} />
+                                    <h4 className={styles.style}>{service.style}</h4>
                                     <p>starting from..</p>
-                                    <h4 className={`${styles.price} ${styles.fle}`}>R700</h4>
-                                    <h4 className={`${styles.cta} ${styles.fle}`} >BOOK NOW</h4>
+                                    <h4 className={`${styles.price} ${styles.fle}`}>{service.price}</h4>
+                                    <Link href={'/#form'}><Button className={`${styles.cta} ${styles.fle}`} >BOOK NOW</Button></Link>
                                 </div>
                             </Card>
                         </div>
