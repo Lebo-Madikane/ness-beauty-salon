@@ -56,7 +56,7 @@ export default function Footer() {
                         })}
                     </div>
                     <div className={styles.msg}>
-                        <span className={styles.line}></span>Wear Your Crown<span className={styles.line}></span>
+                        <span className={styles.line}></span>Choose Your Crown<span className={styles.line}></span>
                     </div>
                     <div className={styles.cta}>
                         <Link href="/gallery">
