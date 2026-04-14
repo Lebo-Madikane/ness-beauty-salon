@@ -10,7 +10,7 @@ export default function ScrollSections() {
         <main className={styles.scroll}>
             <div className={styles.aboutOne}>
                 <h4>Pure Style</h4>
-                <p>Crafted from nature's best, every style is a blend of pure ingridients and vibrant product.</p>
+                <p>More than a hairstyle,<br /> it’s your transformation.<br />Walk in ordinary,<br />leave feeling like your best self.</p>
             </div>
             <section className={styles.panel}><Hero /></section>
             <section className={styles.panel}><Services /></section>
