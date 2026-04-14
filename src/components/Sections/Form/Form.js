@@ -13,15 +13,15 @@ export default function Form() {
                             <p>Select your preferred date and time</p>
                             <div className={styles.field}>
                                 <input placeholder='Name'/>
-                                <input placeholder='Last Name' />
+                                <input placeholder='Email' />
                             </div>
                             <div className={styles.field}>
                                 <input placeholder='+2784 391 7..' />
                                 <label>Select Style <select></select></label>
                             </div>
                             <div className={styles.field}>
-                                <input type='date'/>
-                                <input type='time'/>
+                                <input className={styles.date} type='date'/>
+                                <input className={styles.time} type='time'/>
                             </div>
                             <Button>SUBMIT</Button>
                         </form>
