@@ -18,15 +18,15 @@
             .formCard {
                 width: 100%;
                 height: 23rem;
-                padding: 2rem;
+                padding: 1rem;
                 margin: 0 auto;
                 border: none;
                 background-color: var(--color-surface);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
                 .form {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
                     
                     p {
                         color: var(--color-secondary);
