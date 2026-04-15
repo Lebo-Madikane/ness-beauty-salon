@@ -41,7 +41,7 @@ export default function Services() {
                         <div key={service.id}>
                             <Card className={styles.serviceCard}>
                                 <div className={styles.serviceCardContent}>
-                                    <Image className={styles.image} src={service.image} alt="Hero Image" width={150} height={100} priority={true} />
+                                    <Image className={styles.image} src={service.image} alt="Service Image" width={150} height={100} priority={true} />
                                     <h4 className={styles.style}>{service.style}</h4>
                                     <p>starting from..</p>
                                     <h4 className={`${styles.price} ${styles.fle}`}>{service.price}</h4>

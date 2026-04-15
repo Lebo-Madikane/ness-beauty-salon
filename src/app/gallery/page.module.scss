@@ -1,100 +1,125 @@
 @use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss';
 
+.galleryPage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    url(/images/homepage-images/homePageImgBg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.container {
-    border: 2px solid yellow;
-    width: 100%;
-    height: calc(100vh - 232px);
-    overflow-y: none;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .container {
 
-    .aboutOne {
-        width: 22%;
-        min-height: fit-content;
-        padding: 3px;
-        border: 10px dotted black;
-        position: absolute;
-        top: 44%;
-        left: 3%;
-    
-        p {
-            margin-bottom: 0;
-        }
-    
-        @include mobile {
-            display: none;
-        }
-    
-        @include tablet {
-            display: none;
-        }
-    }
-
-    .gallery {
-        width: 40%;
-        height: 70%;
-        border: 2px solid red;
-        margin: 0 auto;
-        padding: 3px;
-
-        @include mobile {
-            width: 98%;
-        }
-
-        .row {
-            height: 50%;
-            border: 2px solid blue;
-            display: flex;
-            justify-content: space-around;
-            padding: 3px;
-        }
-
-        .galleryOne, .galleryTwo, .galleryThree, .galleryFour {
-            width: 159px;
-            border-radius: 49%;
+            width: 100%;
+            height: calc(100vh - 232px);
+            overflow-y: none;
             padding: 5px;
-            border: 2px solid green;
-        }
-    }
-
-    .aboutTwo {
-        width: 22%;
-        height: 16%;
-        padding: 3px;
-        border: 10px dotted black;
-        position: absolute;
-        top: 44%;
-        right: 3%;
-        
-        p {
-            text-align: end;
-            margin-bottom: 0;
-        }
-        
-        .circleContainer {
             display: flex;
-            justify-content: flex-end;
-            height: 55%;
-            gap: 5;
-            border: 2px solid red;
-        
-            .circle {
-                width: 20%;
-                border: 2px solid black;
-                background-color: bisque;
-                border-radius: 50%;
+            flex-direction: column;
+            justify-content: center;
+    
+            .aboutOne {
+                width: 22%;
+                min-height: fit-content;
+                padding: 3px;
+                position: absolute;
+                top: 44%;
+                left: 3%;
+            
+                h4 {
+                    color: var(--color-tertiary);
+                }
+            
+                p {
+                    margin-bottom: 0;
+                    color: var(--color-text-primary);
+                }
+            
+                @include mobile {
+                    display: none;
+                }
+            
+                @include tablet {
+                    display: none;
+                }
+            }
+    
+            .gallery {
+                width: 40%;
+                height: 70%;
+                margin: 0 auto;
+                padding: 3px;
+    
+                @include mobile {
+                    width: 98%;
+                }
+    
+                .row {
+                    height: 50%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    //padding: 5px;
+                }
+    
+                .galleryOne,
+                .galleryTwo,
+                .galleryThree,
+                .galleryFour {
+                    width: 158px;
+                    height: 150px;
+                    border-radius: 49%;
+                    padding: 3px;
+                    border: 0.5px solid var(--color-text-primary);
+
+                    .galleryImage {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 49%;
+                        object-fit: cover;
+                    }
+                }
+            }
+    
+            .aboutTwo {
+                width: 22%;
+                height: 16%;
+                padding: 3px;
+                position: absolute;
+                top: 44%;
+                right: 3%;
+            
+                h4 {
+                    color: var(--color-tertiary);
+                    text-align: end;
+                    margin-bottom: 5;
+                }
+            
+                .circleContainer {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 48%;
+                    gap: 5;
+            
+                    .circle {
+                        width: 20%;
+                        border: 2px solid var(--color-tertiary);
+                        background-color: var(--color-text-primary);
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--color-secondary);
+                    }
+                }
+            
+                @include mobile {
+                    display: none;
+                }
+            
+                @include tablet {
+                    display: none;
+                }
             }
         }
-        
-        @include mobile {
-            display: none;
-        }
-        
-        @include tablet {
-            display: none;
-        }
-    }
 }
+
