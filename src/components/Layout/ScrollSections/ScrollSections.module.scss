@@ -2,13 +2,11 @@
 @use '../../../styles/mixins' as *;
 
 .scroll {
-    //border: 2px solid yellow;
     width: 100%;
     height: calc(100vh - 232px);
     padding: 5px;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    z-index: 1;
 
     .aboutOne {
         width: 22%;
