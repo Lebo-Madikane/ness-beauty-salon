@@ -59,6 +59,10 @@
                 width: 400px;
                 object-fit: cover;
                 z-index: 40;
+
+                @include mobile {
+                    width: 90%;
+                }
             }
         }
 

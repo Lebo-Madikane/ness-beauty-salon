@@ -2,7 +2,7 @@
 @use '../../../styles/mixins' as *;
 
 .services {
-    max-width: fit-content;
+    width: 100%;
     align-content: center;
     margin: 0px auto;
 
@@ -10,6 +10,11 @@
         text-align: center;
         max-width: 70%;
         margin: 0 auto;
+
+        @include mobile {
+            padding: 0;
+            max-width: 95%;
+        }
 
         .content {
             width: 100%;
@@ -19,11 +24,6 @@
             @include flex-center;
             gap: 1rem;
 
-            @include mobile {
-                padding: 0;
-                width: 100%;
-            }
-
             .serviceCard {
                     width: 11rem;
                     height: 100%;
@@ -31,7 +31,7 @@
                     border: none;
             
                     @include mobile {
-                        width: 9.5rem;
+                        width: 9rem;
                     }
             
                     &:hover {
@@ -80,6 +80,5 @@
                     }
                 }
         }
-
     }
 }

@@ -26,6 +26,10 @@
                 flex-direction: column;
                 justify-content: center;
 
+                @include mobile {
+                    width: 90%;
+                }
+
                 .form {
                     
                     p {
