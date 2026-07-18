@@ -1,7 +1,12 @@
 import styles from './Footer.module.scss';
-import { FaWhatsapp, FaInstagram, FaTiktok, FaFacebookF } from 'react-icons/fa'
 import Button from '@/components/UI/Button/Button';
 import Link from 'next/link';
+import {
+    FaWhatsapp,
+    FaInstagram,
+    FaFacebookF,
+    FaTiktok,
+} from "react-icons/fa6";
 
 export default function Footer() {
 
