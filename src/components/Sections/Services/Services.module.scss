@@ -24,9 +24,12 @@
             @include flex-center;
             gap: 1rem;
 
+            @include mobile {
+                height: 400px;
+            }
+
             .serviceCard {
                     width: 11rem;
-                    height: 100%;
                     transition: all 0.3s ease;
                     border: none;
             
@@ -50,6 +53,10 @@
                             height: 7rem;
                             border-radius: 10px 10px 0px 0px;
                             object-fit: cover;
+
+                            @include mobile {
+                                height: 5rem;
+                            }
                         }
 
                         p {

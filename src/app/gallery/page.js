@@ -1,8 +1,10 @@
+"use client";
 import Header from "@/components/Layout/Header/Header"
 import Cta from "@/components/Layout/CTA/Cta"
 import Footer from "@/components/Layout/Footer/Footer"
 import styles from "./page.module.scss"
 import Image from "next/image"
+import { motion } from "motion/react";
 
 
 
@@ -16,7 +18,12 @@ export default function GalleryPage() {
                     <h4>Pure Style</h4>
                     <p>More than a hairstyle,<br /> it’s your transformation.<br />Walk in ordinary,<br />leave feeling like your best self.</p>
                 </div>
-                <div className={styles.gallery}>
+                <motion.div className={styles.gallery}
+                    initial={{ scale: 0, y: 40 }}
+                    whileInView={{ scale: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    transition={{ duration: 0.6, ease: [0, 0, 0.2, 1] }}
+                >
                     <div className={styles.row}>
                         <div className={styles.galleryOne}>
                             <Image className={styles.galleryImage} src='/images/services-images/Braides.webp' alt="Testimony Image" width={150} height={100} priority={true} />
@@ -33,7 +40,7 @@ export default function GalleryPage() {
                             <Image className={styles.galleryImage} src='/images/services-images/Braides.webp' alt="Testimony Image" width={150} height={100} priority={true} />
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 <div className={styles.aboutTwo}>
                     <h4>Boys Cut</h4>
                     <div className={styles.circleContainer}>

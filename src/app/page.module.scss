@@ -1,7 +1,19 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .homepage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
     url(/images/homepage-images/homePageImgBg.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation: fadeIn 2s ease-out both;
+    transition: all .3s ease;
 }

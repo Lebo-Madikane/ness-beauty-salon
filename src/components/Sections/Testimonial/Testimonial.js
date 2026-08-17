@@ -1,9 +1,16 @@
+'use client';
 import styles from './Testimonial.module.scss'
 import Image from 'next/image'
+import { motion } from "motion/react";
 
 export default function Testimonial() {
     return (
-        <section id='contact' className={styles.testimonial}>
+        <motion.section id='contact' className={styles.testimonial}
+            initial={{ scale: 0, y: 40 }}
+            whileInView={{ scale: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: [0, 0, 0.2, 1] }}
+        >
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.testimony}>
@@ -21,7 +28,7 @@ export default function Testimonial() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 
 }

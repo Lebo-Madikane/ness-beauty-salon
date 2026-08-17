@@ -3,6 +3,8 @@ import { useState } from 'react';
 import styles from './Form.module.scss'
 import Card from '@/components/UI/Card/Card'
 import Button from '@/components/UI/Button/Button'
+import { motion } from "motion/react";
+
 
 export default function Form() {
 
@@ -91,7 +93,12 @@ export default function Form() {
     };
 
     return (
-        <section id='form' className={styles.formSection}>
+        <motion.section id='form' className={styles.formSection}
+            initial={{ scale: 0, y: 40 }}
+            whileInView={{ scale: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: [0, 0, 0.2, 1] }}
+        >
             <div className={styles.container}>
                 <div className={styles.content}>
                     <Card className={styles.formCard}>
@@ -201,7 +208,7 @@ export default function Form() {
                     </Card>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 
 }
