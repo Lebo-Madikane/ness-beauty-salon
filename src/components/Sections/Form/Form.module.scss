@@ -6,8 +6,6 @@
     align-content: center;
     margin: 0px auto;
     transition: all .3s ease;
-    border: 2px solid green;
-
 
     .container {
         max-width: 96%;
@@ -85,4 +83,30 @@
         }
 
     }
+}
+
+// Responsive Design for Mobile
+
+@include mobile {
+
+    .formSection {
+        .container {
+            .content {
+                .formCard {
+                    height: 20rem;
+
+                    .form {
+                        h3 {
+                            font-size: 1.1rem;
+                        }
+
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
