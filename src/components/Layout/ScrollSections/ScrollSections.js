@@ -12,10 +12,10 @@ export default function ScrollSections() {
                 <h4>Pure Style</h4>
                 <p>More than a hairstyle,<br /> it’s your transformation.<br />Walk in ordinary,<br />leave feeling like your best self.</p>
             </div>
-            <section className={styles.panel}><Hero /></section>
-            <section className={styles.panel}><Services /></section>
-            <section className={styles.panel}><Form /></section>
-            <section className={styles.panel}><Testimonial /></section>
+            <section id="hero" className={styles.panel}><Hero /></section>
+            <section id="services" className={styles.panel}><Services /></section>
+            <section id="form" className={styles.panel}><Form /></section>
+            <section id="contact" className={styles.panel}><Testimonial /></section>
             <div className={styles.aboutTwo}>
                 <h4>Boys Cut</h4>
                 <div className={styles.circleContainer}>

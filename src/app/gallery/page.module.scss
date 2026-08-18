@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
 
     .container {
-
             width: 100%;
             height: calc(100vh - 232px);
             overflow-y: none;
@@ -45,21 +44,22 @@
             }
     
             .gallery {
-                width: 40%;
-                height: 70%;
                 margin: 0 auto;
                 padding: 3px;
+                border: 2px solid red;
     
                 @include mobile {
                     width: 98%;
                 }
+
+                .rowOne {
+                    margin-bottom: 20px;
+                }
     
                 .row {
-                    height: 50%;
                     display: flex;
                     justify-content: center;
-                    gap: 20;
-                    //padding: 5px;
+                    gap: 20px;
                 }
     
                 .galleryOne,
@@ -67,7 +67,7 @@
                 .galleryThree,
                 .galleryFour {
                     width: 158px;
-                    height: 150px;
+                    height: 154px;
                     border-radius: 49%;
                     padding: 3px;
                     border: 0.5px solid var(--color-text-primary);
