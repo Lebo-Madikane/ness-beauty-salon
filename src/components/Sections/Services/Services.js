@@ -13,25 +13,25 @@ export default function Services() {
             id: 1,
             style: "Braids",
             price: "R900",
-            image: '/images/services-images/Braides.webp',
+            image: '/images/services-images/hairBraides.webp',
         },
         {
             id: 2,
             style: "Buys Cut",
             price: "R600",
-            image: '/images/services-images/Braides.webp',
+            image: '/images/services-images/boysCut.webp',
         },
         {
             id: 3,
             style: "Wash",
             price: "R300",
-            image: '/images/services-images/Braides.webp',
+            image: '/images/services-images/hairWash.webp',
         },
         {
             id: 4,
             style: "Installation",
             price: "R1500",
-            image: '/images/services-images/Braides.webp',
+            image: '/images/services-images/hairInstallationn.webp',
         }
     ]
 
