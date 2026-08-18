@@ -6,6 +6,7 @@
     align-content: center;
     margin: 0px auto;
     transition: all .3s ease;
+    border: 2px solid red;
 
     .container {
         max-width: fit-content;
@@ -13,7 +14,6 @@
 
         .content {
             width: 100%;
-            min-height: 300px;
             text-align: center;
             position: relative;
             display: flex;
@@ -23,16 +23,18 @@
             .structure {
                 display: inline-block;
                 position: absolute;
+                border: 2px solid red;
             }
 
             .heading {
-                width: 500px;
-                height: 450px;
+                width: 400px;
+                height: fit-content;
                 font-size: 90;
                 font-weight: 600;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                border: 2px solid yellow;
                 
                 .ness, .salon {
                     display: none;

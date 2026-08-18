@@ -5,6 +5,7 @@
     width: 100%;
     align-content: center;
     margin: 0px auto;
+    border: 2px solid blue;
 
     @include mobile {
         width: 100%;
