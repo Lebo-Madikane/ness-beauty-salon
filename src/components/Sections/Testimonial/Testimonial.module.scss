@@ -5,11 +5,6 @@
     width: 100%;
     align-content: center;
     margin: 0px auto;
-    border: 2px solid blue;
-
-    @include mobile {
-        width: 100%;
-    }
 
     .container {
         max-width: 100%;
@@ -77,5 +72,15 @@
             }
         }
 
+    }
+}
+
+// Mobile Responsive Design
+
+.testimonial {
+    
+    p{
+        font-size: 0.9rem;
+        border: 2px solid blue;
     }
 }
