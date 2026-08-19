@@ -15,18 +15,18 @@ export default function Gallery() {
         >
             <div className={`${styles.row} ${styles.rowOne}`}>
                 <div className={styles.galleryOne}>
-                    <Image className={styles.galleryImage} src='/images/services-images/hairBraides.webp' alt="Testimony Image" width={150} height={100} priority={true} />
+                    <Image className={styles.galleryImage} src='/images/gallery-images/conroads.webp' alt="Women Hairsyle Image" width={150} height={100} priority={true} />
                 </div>
                 <div className={styles.galleryTwo}>
-                    <Image className={styles.galleryImage} src='/images/services-images/boysCut.webp' alt="Testimony Image" width={150} height={100} priority={true} />
+                    <Image className={styles.galleryImage} src='/images/gallery-images/natural.webp' alt="Women Hairsyle Image" width={150} height={100} priority={true} />
                 </div>
             </div>
             <div className={styles.row}>
                 <div className={styles.galleryThree}>
-                    <Image className={styles.galleryImage} src='/images/services-images/hairWash.webp' alt="Testimony Image" width={150} height={100} priority={true} />
+                    <Image className={styles.galleryImage} src='/images/gallery-images/wool.webp' alt="Women Hairsyle Image" width={150} height={100} priority={true} />
                 </div>
                 <div className={styles.galleryFour}>
-                    <Image className={styles.galleryImage} src='/images/services-images/hairInstallation.webp' alt="Testimony Image" width={150} height={100} priority={true} />
+                    <Image className={styles.galleryImage} src='/images/gallery-images/shortHair.webp' alt="Women Hairsyle Image" width={150} height={100} priority={true} />
                 </div>
             </div>
         </motion.div>
