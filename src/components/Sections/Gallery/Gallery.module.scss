@@ -1,0 +1,39 @@
+@use '../../../styles/mixins.scss' as *;
+@use '../../../styles/variables.scss';
+
+.gallery {
+    margin: 0 auto;
+    padding: 3px;
+
+    @include mobile {
+        width: 98%;
+    }
+
+    .rowOne {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .galleryOne,
+    .galleryTwo,
+    .galleryThree,
+    .galleryFour {
+        width: 158px;
+        height: 154px;
+        border-radius: 49%;
+        padding: 3px;
+        border: 0.5px solid var(--color-text-primary);
+
+        .galleryImage {
+            width: 100%;
+            height: 100%;
+            border-radius: 49%;
+            object-fit: cover;
+        }
+    }
+}

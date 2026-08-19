@@ -64,7 +64,7 @@ export default function Footer() {
                         <span className={styles.line}></span>Choose Your Crown<span className={styles.line}></span>
                     </div>
                     <div className={styles.cta}>
-                        <Link href="/gallery">
+                        <Link href="#gallery">
                             <Button>Gallery</Button>
                         </Link>
                     </div>

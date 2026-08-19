@@ -9,7 +9,7 @@ export default function Cta() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <Link href={"#services"}><Button >Services</Button></Link>
-                    <Link href={"#contact"}><Button variant='secondary'>Contact</Button></Link>
+                    <Link href={"#gallery"}><Button variant='secondary'>Gallery</Button></Link>
                 </div>
             </div>
         </section>
